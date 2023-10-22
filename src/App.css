@@ -1,38 +1,313 @@
-.App {
-  text-align: center;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@font-face {
+  font-family: "Degular";
+  src: url("./DegularDisplay-Regular.woff2") format("woff2"),
+    url("./DegularDisplay-Regular.woff") format("woff"),
+    url("./DegularDisplay-Regular.otf") format("otf");
+  font-weight: 900;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url("https://grayjay.applause.stream/font/DegularDisplay/DegularDisplay-Bold.woff2");
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Poppins:wght@500&family=Roboto:ital,wght@0,500;1,500&display=swap"); */
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Degular", sans-serif; */
+  /* font-family: 'Degular', 'Open Sans', 'Arial', 'Helvetica', sans-serif !important; */
+  /* font-family: 'Degular', sans-serif;
+    src: url('../font/DegularDisplay/DegularDisplay-Black.woff2') format('woff2'); */
+  color: #222831;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.Container {
   flex-direction: column;
+}
+.row {
+  display: flex;
+}
+.Navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.NavTitle {
+  margin: 20px 0px 17px 40px;
+}
+.NavItems {
+  margin: 16px 48px 16px 0px;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  margin-right: 30px;
+  font-size: 16px;
+}
+.NavItems > a {
+  color: black;
+}
+.NavAvtar {
+  width: 40px;
+  height: 40px;
+  font-size: 16.79px;
+  margin-right: 11.24px;
+}
+.Avtar {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 50%;
+  font-family: "Degular" "Display";
+  background-color: #fbd46d;
+}
+.BackgroundImage {
+  background-image: linear-gradient(to right, #4b4d52, #fbd46d);
+  height: 300px;
+}
+.Main {
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 246px 126px 287px;
+}
+.MainAvtar {
+  width: 80px;
+  height: 80px;
+  font-size: 34px;
+  margin-top: -40px;
+}
+.ArtistName {
+  line-height: 32px;
+  font-size: 34px;
+  margin-top: 25px;
+}
+.ArtistUsername {
+  margin-top: 8px;
+  font-weight: Bold;
+  font-size: 22px;
+  line-height: 22px;
+}
+.Button {
+  padding: 11px 24px 11px 24px;
+  border: none;
+  background: #ffffff;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid #eeeeee;
+}
+.Margin-top-26px {
+  margin-top: 26px;
+}
+.Button-color-yellow {
+  background: #fbd46d;
+  border: none;
+  /* margin-right: 20px; */
+}
+.Button-color-gray {
+  background: #eeeeee;
+}
+.Margin-right-20px {
+  margin-right: 20px;
+}
+.Gray {
+  color: #b8b8b8;
+}
+.Margin-top-35px {
+  margin-top: 35px;
+}
+span {
+  margin-right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.ApplausCommunity {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.987) 40.43%,
+      rgba(255, 255, 255, 0.1) 97.21%
+    ),
+    url("https://s3-alpha-sig.figma.com/img/3816/028a/d1613c4d622f0bdb7ba416009fd11c8b?Expires=1665964800&Signature=YpjoFTH65lKOTLmPlJxc8R5XSJvdASBPXYB0GsW8TvUfNLvwGUwbp4NNvCXImupwJSSAW4y4xdLDFjhy52jni55H2szLovlSCJmgfkjjpfgPySoU76UMlzARz~QYOizRMXTXoWFWItAT10drxmDReHVJvvVgSOPD5jROh9E~Dy1ODp3MOIUkw7a947dBdLfOzHoIeBeOeuDeKyfXywixDsSSs9z6DyyEe3suw-tZH-DKUDKKi~TqwmXXDvwcaHC08znMgyly-MfsD-KhB9Rx-3wokgIhagyiBzHOIfydSX8Z6aumKoJijw8iNBacV8NNAAbXHgA9jhpl0Z3dTrTMWQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-size: 100%;
+  height: 160px;
+  background-position: 0px 376px;
+  border-radius: 16px;
+  border: none;
+  margin-top: 66px;
+  max-width: 792px;
+}
+.ApplausCommunity > div {
+  margin: 46.5px 0px 46.5px 40px;
+  line-height: 40px;
+}
+.ApplausCommunity > div > p {
+  font-size: 13px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.UpcomingEvents {
+  margin-top: 54px;
+}
+
+.UpcomingEvents > p {
+  margin-top: 17px;
+}
+
+.Footer {
+  background: #222831;
+  text-align: center;
+  padding: 82px 200px 95px 200px;
+}
+
+.Footer > div > a,
+.Footer > div {
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.Responsive {
+  display: none;
+}
+.Dropdown {
+  background: #ffffff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 24px;
+  top: 61px;
+  padding: 20px 30px 30px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1), 0px -2px 6px rgba(0, 0, 0, 0.1);
+}
+.DropdownAvtar {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+}
+.Userinfo {
+  justify-content: space-between;
+  line-height: 20px;
+}
+.Email {
+  font-size: 12px;
+}
+.UpdateStatus {
+  border: 1px solid rgba(238, 238, 238, 1);
+  border-radius: 6px;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 23px;
+  justify-content: space-evenly;
+  padding: 9px;
+}
+.Margin-top-20px {
+  margin-top: 20px;
+}
+
+.LandingImage > img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.EventDetails {
+  line-height: 30px;
+}
+
+.Location {
+  background: #ffffff;
+  position: absolute;
+  right: 275px;
+  top: 276.52px;
+  padding: 50px;
+  line-height: 30px;
+  border-radius: 16px;
+  border: 1px solid #eeeeee;
+}
+
+.Slider {
+  margin: 6px 0px 30px 0px;
+}
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+.slick-dots {
+  left: -15px;
+}
+@media only screen and (max-width: 600px) {
+  .BackgroundImage {
+    height: 140px;
   }
-  to {
-    transform: rotate(360deg);
+  .Main {
+    padding: 0px 25px 113px 20px;
+  }
+  .Location {
+    position: static;
+    margin-top: 47px;
+  }
+  .ApplausCommunity {
+    margin-top: 34px;
+    background-size: 100%;
+    background-position: 0px -68px;
+    height: 110px;
+  }
+  .ApplausCommunity > div {
+    margin: 18px 0px 0px 62px;
+    font-size: 12px;
+  }
+
+  .UpcomingEvents {
+    margin-top: 34px;
+  }
+  .LandingImage > img {
+    width: 170px;
+    height: 170px;
+  }
+  .Footer {
+    padding: 30px 67px 30px 67px;
+  }
+  .FooterDetails {
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+  }
+  .NavItems {
+    display: none;
+  }
+  .MenuItems {
+    background-image: url("./images/MenuItems.png");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+  }
+  .Slider {
+    padding: 0px;
+  }
+  .Responsive {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 600px) {
+  .Main {
+    padding: 0px 146px 126px 180px;
+  }
+  .Location {
+    position: static;
+    margin-top: 47px;
+  }
+  .ApplausCommunity {
+    background-size: 100%;
+    background-position: 0px -97px;
+  }
+
+  .LandingImage > img {
+    width: 200px;
+    height: 200px;
+  }
+  .FooterDetails {
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
   }
 }
